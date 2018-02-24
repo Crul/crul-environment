@@ -1,0 +1,96 @@
+-- plugin-surround
+ys{motion}"     Add surroundings
+cs")            Change surroundings
+ds"             Delete surroundings
+)}]>            bBra
+
+-- plugin-commentary
+gc{motion}      Comment / Uncomment
+
+-- plugin-textobj-* motions
+[i/a]f          Function
+[i/a]e          Entire file
+[i/a][i/I]      Same indent
+[i/a]l          Line
+[i/a]_          word in snake_case_word
+[i/a][f/c]      Python function / class
+[i/a]c          CSS class
+
+-- plugin-ReplaceWithRegister
+["x]gr{motion}  Replace {motion} text with the contents of register x.
+["x]grr         Replace lines with the contents of register x.
+
+-- plugin-abolish coercion
+crs             Convert to snake_case
+crm             Convert to MixedCase
+crc             Convert to camelCase
+crs             Convert to snake_case
+cru             Convert to UPPER_CASE
+cr-             Convert to Dash-case
+cr.             Convert to dot.case
+cr              Convert to space case
+crt             Convert to Title Case
+
+-- plugin-fugitive (git)
+TODO
+
+-- custom defined
+jqid            Surround current word with JQuery id selector $('#...')
+jqcl            Surround current word with JQuery class selector $('.___')
+htmlcss         Surround current word with <link href="...""> tag
+htmljs          Surround current word with <script src="..."> tag
+jsexv{motion}   Extract JS variable (motion / visual)
+jsexf{motion}   Extract JS function (motion / visual)
+pyexv{motion}   Extract Python variable (motion / visual)
+jsab            Select JS block
+jsaf            Select JS function
+
+-- vim - normal mode
+I / A           Insert at the beginning / end of the line
+^ / g_          Position cursor at the first / last non-space character of the line
+* / #           Go to next / previous occurence of current word
+; / ,           Repeat last f / t / F / T going relatively fowards / backwards
+{ / }           Move cursor paragraph up / down
+H / M / L       Position cursor at the top / middle / bottom of screen
+zt              View current line at top
+zz              View current line at middle
+zb              View current line at bottom
+<C-E> / <C-Y>   Move view line up / down
+<C-D> / <C-U>   Move cursor half-screen down / up
+<C-F> / <C-B>   Move cursor screen down / up
+<C-[><C-{>      Jump to the "{" at the start of the current code block
+<C-]><C-}>      Jump to the "}" at the end of the current code block
+<C-[><C-%>      Jump to the start of the current tag
+<C-]><C-%>      Jump to the end of the current tag
+gt / gT         Next / Previous tab
+gu / gU{motion} lower / Upper case
+x / X           Delete current / previous char
+s / S           Deletes de current char / line and goes to insert mode
+D / C           Deletes to the end of the line / and goes to insert mode
+gf              Loads file under cursor in current window
+<C-W>T          Moves current window to new tab
+<C-W>=          Auto window layout
+<C-W>_ / |      Maximizes vertically / horizontally window
+
+-- vim - insert mode
+<C-O>           Single-command normal mode
+<C-A>           Insert last inserted text
+<C-H>           Delete back one character (backspace)
+<C-W>           Delete back one word
+<C-U>           Delete back to start of line
+<C-K>           Delete forward to end of line
+
+-- commands
+:r ! cmd.exe    Read console command to file
+:sort           Sort selection
+:g/regex/normal ... Execute ...
+
+-- utils (for scripting)
+viwo          Position cursor at the beginning of the current word
+
+-- vim - insert mode
+<C-N> / <C-P>   Autocomplete
+<C-X> <C-F>     File autocompletion
+<C-X> <C-N / P> Word autocompletion
+<C-X> <C-L>     Line autocompletion
+<C-X> <C-O>     Language autocompletion
