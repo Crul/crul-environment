@@ -69,3 +69,11 @@ function! SelectByModeFullLines(isvisual)
 endfunction
 
 autocmd BufRead,BufNewFile */CursoRelatividadGeneralJavierGarcia/index.html nmap <silent> <Leader>newc gg?<h2 id="capitulo-\d<CR>/div <CR>%V%ky`>o<Esc>p/capitulo-\d/e<CR><C-X>/Capítulo \d/e<CR><C-A>"zyiw/capitulo-\d<CR><C-X>diti<CR><div class="grupo-formulas"><CR><span class="formula-titulo"><CR>(<Esc>"zpa.1) TITULO FORMULA<CR></span><CR><span class="formula"><CR>LaTeX ForMuLa<CR></span><CR></div><CR><Esc>=itgg?<\/ul><CR>?<li><CR>V3jy`>p/\d<CR><C-X>n<C-A>/index=\d/e<CR><C-A>?watch\?v=[^&]*?e<CR>ciwYOUTUBEVIDEOID<Esc>viw
+fun! NewCapituloForCursoDeRelatividad()
+    silent exec "normal ºnewc"
+endf
+
+autocmd BufRead,BufNewFile */CursoRelatividadGeneralJavierGarcia/index.html nmap <silent> <Leader>newf odiv.grupo-formulas>(span.formula-titulo{${newline}(XX.X) TÍTULO-FÓRMULA${newline}}+span.formula{${newline}FORMULA${newline}})<C-Y>,<Esc>kk=6j
+fun! NewFunctionForCursoDeRelatividadGeneral()
+    silent exec "normal ºnewf"
+endf
