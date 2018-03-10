@@ -35,7 +35,7 @@ Plug 'honza/vim-snippets'
 " Plug 'hougo/deoplete.nvim'        " <Tab> completion options
 " Plug 'ervandew/supertab'          " <Tab> completion options
 " Plug 'yggdroot/indentline'        " Show indentation vertical lines
-" Plug 'mattn/emmet-vim'            " ul>3*li.menu-opt>a
+Plug 'mattn/emmet-vim'            " ul>3*li.menu-opt>a
 " Plug 'w0rp/ale'                   " Lint
 
 " Plug 'tpope/vim-fugitive'         " GIT
