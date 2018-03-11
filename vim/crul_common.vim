@@ -68,7 +68,7 @@ function! SelectByModeFullLines(isvisual)
     return (a:isvisual ? "`<v`>" : "`[0v`]$")
 endfunction
 
-autocmd BufRead,BufNewFile */CursoRelatividadGeneralJavierGarcia/index.html nmap <silent> <Leader>newc gg?<h2 id="capitulo-\d<CR>/div <CR>%V%ky`>o<Esc>p/capitulo-\d/e<CR><C-X>/Capítulo \d/e<CR><C-A>"zyiw/capitulo-\d<CR><C-X>diti<CR><div class="grupo-formulas"><CR><span class="formula-titulo"><CR>(<Esc>"zpa.1) TITULO FORMULA<CR></span><CR><span class="formula"><CR>LaTeX ForMuLa<CR></span><CR></div><CR><Esc>=itgg?<\/ul><CR>?<li><CR>V3jy`>p/\d<CR><C-X>n<C-A>/index=\d/e<CR><C-A>?watch\?v=[^&]*?e<CR>ciwYOUTUBEVIDEOID<Esc>viw
+autocmd BufRead,BufNewFile */CursoRelatividadGeneralJavierGarcia/index.html nmap <silent> <Leader>newc gg?<h2 id="capitulo-\d<CR>/div <CR>%V%ky`>o<Esc>p/capitulo-\d/e<CR><C-X>n<C-X>/Capítulo \d/e<CR><C-A>"zyiw/capitulo-\d<CR><C-X>diti<CR><div class="grupo-formulas"><CR><span class="formula-titulo"><CR>(<Esc>"zpa.1) TITULO FORMULA<CR></span><CR><span class="formula"><CR>LaTeX ForMuLa<CR></span><CR></div><CR><Esc>=itgg?<\/ul><CR>?<li><CR>V3jy`>p/\d<CR><C-X>n<C-A>/index=\d/e<CR><C-A>?watch\?v=[^&]*?e<CR>ciwYOUTUBEVIDEOID<Esc>viw
 fun! NewCapituloForCursoDeRelatividad()
     silent exec "normal ºnewc"
 endf
